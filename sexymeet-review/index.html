@@ -257,6 +257,39 @@
   .photo-row img:hover {
     transform: scale(1.08);
   }
+  .profile-cards {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.1rem 1rem 1.25rem;
+    margin: 1.75rem 0;
+  }
+  .profile-lead { text-align: center; font-weight: 600; margin: 0 0 0.9rem; }
+  .profile-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .profile-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid var(--border);
+    transition: transform 0.2s ease;
+  }
+  .profile-card:hover img { transform: scale(1.04); }
+  .profile-city { font-size: 0.85rem; color: var(--sub); margin-top: 0.4rem; }
+  .profile-btn { font-size: 0.85rem; font-weight: 600; color: var(--accent); margin-top: 0.15rem; }
   .sticky-cta { display: none; }
   @media (max-width: 640px) {
     .wrap { padding-top: 1.25rem; }
@@ -276,6 +309,8 @@
       text-align: center;
     }
     .sticky-cta .btn { display: block; }
+    .profile-card, .profile-card img { width: 120px; }
+    .profile-card img { height: 120px; }
   }
 </style>
 </head>
@@ -307,14 +342,6 @@
     <a href="/go/sexymeet-photo/" rel="sponsored nofollow noopener" target="_blank"><img src="../portrait-3.jpg" alt="Casual dating member near Christchurch" width="100" height="100" loading="lazy"></a>
     <a href="/go/sexymeet-photo/" rel="sponsored nofollow noopener" target="_blank"><img src="../portrait-4.jpg" alt="Casual dating member near Hamilton" width="100" height="100" loading="lazy"></a>
     <a href="/go/sexymeet-photo/" rel="sponsored nofollow noopener" target="_blank"><img src="../portrait-5.jpg" alt="Casual dating member near Tauranga" width="100" height="100" loading="lazy"></a>
-  </div>
-
-  <div class="photo-row">
-    <a href="/go/sexymeet-photo/" rel="sponsored nofollow noopener" target="_blank"><img src="../portrait-6.jpg" alt="Casual dating member near Dunedin" width="100" height="100" loading="lazy"></a>
-    <a href="/go/sexymeet-photo/" rel="sponsored nofollow noopener" target="_blank"><img src="../portrait-7.jpg" alt="Casual dating member near Napier" width="100" height="100" loading="lazy"></a>
-    <a href="/go/sexymeet-photo/" rel="sponsored nofollow noopener" target="_blank"><img src="../portrait-8.jpg" alt="Casual dating member near Rotorua" width="100" height="100" loading="lazy"></a>
-    <a href="/go/sexymeet-photo/" rel="sponsored nofollow noopener" target="_blank"><img src="../portrait-9.jpg" alt="Casual dating member near Palmerston North" width="100" height="100" loading="lazy"></a>
-    <a href="/go/sexymeet-photo/" rel="sponsored nofollow noopener" target="_blank"><img src="../portrait-10.jpg" alt="Casual dating member near Nelson" width="100" height="100" loading="lazy"></a>
   </div>
 
   <nav class="toc" aria-label="Contents">
@@ -357,6 +384,27 @@
   <h3>Step 3: using it on mobile</h3>
   <p>Sexymeet has no App Store or Play Store app. It runs as a web platform (PWA) that <strong>loads in any mobile browser</strong>.</p>
   <p>It works on a phone, but the layout is clearly <strong>designed for a larger screen</strong>. Desktop gives the better experience.</p>
+
+  <aside class="profile-cards" aria-label="Members">
+    <p class="profile-lead">Browsing is free — have a look at a few profiles first.</p>
+    <div class="profile-grid">
+    <a class="profile-card" href="/go/sexymeet-profile/" rel="sponsored nofollow noopener" target="_blank">
+      <img src="../portrait-6.jpg" alt="Member near Dunedin" width="140" height="140" loading="lazy">
+      <span class="profile-city">Near Dunedin</span>
+      <span class="profile-btn">Say hi &rarr;</span>
+    </a>
+    <a class="profile-card" href="/go/sexymeet-profile/" rel="sponsored nofollow noopener" target="_blank">
+      <img src="../portrait-7.jpg" alt="Member near Napier" width="140" height="140" loading="lazy">
+      <span class="profile-city">Near Napier</span>
+      <span class="profile-btn">Say hi &rarr;</span>
+    </a>
+    <a class="profile-card" href="/go/sexymeet-profile/" rel="sponsored nofollow noopener" target="_blank">
+      <img src="../portrait-8.jpg" alt="Member near Rotorua" width="140" height="140" loading="lazy">
+      <span class="profile-city">Near Rotorua</span>
+      <span class="profile-btn">Say hi &rarr;</span>
+    </a>
+    </div>
+  </aside>
 
   <div class="cta-panel">
     <a class="btn" href="/go/sexymeet-mid/" rel="sponsored nofollow noopener" target="_blank">See who's online on Sexymeet &rarr;</a>
@@ -420,6 +468,22 @@
   <h3>Skip it if you need published pricing</h3>
   <p>If you refuse to enter payment details <strong>without seeing a price first</strong>, Sexymeet will frustrate you. That information is simply not available earlier.</p>
   <p>The same goes if you want curated matches based on shared interests. A <strong>swipe-based dating app is a better fit</strong> for that.</p>
+
+  <aside class="profile-cards" aria-label="Members">
+    <p class="profile-lead">Prefer to judge for yourself? Start with a profile.</p>
+    <div class="profile-grid">
+    <a class="profile-card" href="/go/sexymeet-profile/" rel="sponsored nofollow noopener" target="_blank">
+      <img src="../portrait-9.jpg" alt="Member near Palmerston North" width="140" height="140" loading="lazy">
+      <span class="profile-city">Near Palmerston North</span>
+      <span class="profile-btn">Say hi &rarr;</span>
+    </a>
+    <a class="profile-card" href="/go/sexymeet-profile/" rel="sponsored nofollow noopener" target="_blank">
+      <img src="../portrait-10.jpg" alt="Member near Nelson" width="140" height="140" loading="lazy">
+      <span class="profile-city">Near Nelson</span>
+      <span class="profile-btn">Say hi &rarr;</span>
+    </a>
+    </div>
+  </aside>
 
   <h3>The right way to test it</h3>
   <table>

@@ -325,6 +325,26 @@
     border: 1px solid var(--border);
     border-radius: 10px;
   }
+  .screenshot--form { max-width: 324px; margin-left: auto; margin-right: auto; }
+  .hero-cta {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin: 1rem 0 1.75rem;
+  }
+  .hero-cta__text { flex: 1; text-align: center; }
+  .hero-cta__lead { font-size: 1.1rem; margin: 0 0 0.9rem; }
+  .hero-cta__note { font-size: 0.85rem; color: var(--sub); margin: 0.75rem 0 0; }
+  .hero-cta__img { flex: 0 0 auto; line-height: 0; }
+  .hero-cta__img img { width: 240px; height: 240px; object-fit: cover; border-radius: 12px; display: block; }
+  @media (max-width: 640px) {
+    .hero-cta { flex-direction: column; gap: 1rem; padding: 1.1rem; }
+    .hero-cta__img img { width: 200px; height: 200px; }
+  }
   .screenshot--narrow { max-width: 520px; margin-left: auto; margin-right: auto; }
   .chart { margin: 1.25rem 0 1.75rem; }
   .chart img { width: 100%; height: auto; }
@@ -348,9 +368,13 @@
     <p class="byline">Casual dating notes · Updated <time datetime="2026-09-23">23 September 2026</time></p>
   </header>
 
-  <div class="cta-panel">
-    <a class="btn" href="/go/wannahookup/" rel="sponsored nofollow noopener" target="_blank">Try WannaHookup free &rarr;</a>
-    <p>Free sign-up in under a minute — no credit card needed.</p>
+  <div class="hero-cta">
+    <div class="hero-cta__text">
+      <p class="hero-cta__lead">Flirty fantasy chat, <strong>free to join</strong>.</p>
+      <a class="btn" href="/go/wannahookup/" rel="sponsored nofollow noopener" target="_blank">Try WannaHookup free &rarr;</a>
+      <p class="hero-cta__note">Sign-up in under a minute — no credit card needed.</p>
+    </div>
+    <a class="hero-cta__img" href="/go/wannahookup-hero/" rel="sponsored nofollow noopener" target="_blank"><img src="/images/wannahookup-hero-chat-280.webp" srcset="/images/wannahookup-hero-chat-280.webp 280w, /images/wannahookup-hero-chat-400.webp 400w" sizes="(min-width: 40rem) 240px, 200px" width="280" height="280" alt="Smiling woman — flirty chat on WannaHookup" fetchpriority="high" decoding="async"></a>
   </div>
 
   <p>Looking for flirty, no-pressure chat without the swipe-and-ghost routine of regular dating apps? <strong>WannaHookup is built exactly for that</strong>.</p>
@@ -415,8 +439,8 @@
   <h3>Step 1: fill in the quick form</h3>
   <p>Who you are, who you are looking for, your age, your state and <strong>what kind of chat you want</strong>. Or skip the form and sign in with Google.</p>
 
-  <figure class="screenshot">
-    <a href="/go/wannahookup-screenshot/" rel="sponsored nofollow noopener" target="_blank"><img src="/images/wannahookup-sign-up-form-700.webp" srcset="/images/wannahookup-sign-up-form-700.webp 700w, /images/wannahookup-sign-up-form-1400.webp 1400w" sizes="(max-width: 740px) 100vw, 700px" width="700" height="322" alt="WannaHookup sign-up form: Sign in with Google, I am, age, preference, state and email address" loading="lazy" decoding="async"></a>
+  <figure class="screenshot screenshot--form">
+    <a href="/go/wannahookup-screenshot/" rel="sponsored nofollow noopener" target="_blank"><img src="/images/wannahookup-form-324.webp" width="324" height="544" alt="WannaHookup sign-up form: 100% free to join, sign in with Google, I am, age, preference, state and email address" loading="lazy" decoding="async"></a>
     <figcaption>The sign-up form — one page, or one click with Google. An activation link is sent to your email.</figcaption>
   </figure>
 
